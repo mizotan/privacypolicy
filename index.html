@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -17,7 +17,26 @@
         .lang-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 12px; font-size: 12px; }
         .lang-grid a { color: #00ff33; text-decoration: none; padding: 4px 0; display: inline-block; }
         .lang-grid a:hover { text-decoration: underline; text-shadow: 0 0 4px #00ff33; }
-    </style>
+        /* 🟢 ベクタースキャン色の発光スクロールバー */
+    ::-webkit-scrollbar {
+      width: 8px;
+      background: #000000;
+    }
+    ::-webkit-scrollbar-track {
+      background: #000000;
+      border-left: 1px solid rgba(0, 255, 0, 0.2);
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #008800;
+      border-radius: 4px;
+      box-shadow: 0 0 6px rgba(0, 255, 0, 0.6);
+      border: 1px solid #00FF00;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #00FF00;
+      box-shadow: 0 0 10px rgba(0, 255, 0, 0.9);
+    }
+</style>
 </head>
 <body>
 <div class="container">
@@ -100,3 +119,4 @@
 </div>
 </body>
 </html>
+
